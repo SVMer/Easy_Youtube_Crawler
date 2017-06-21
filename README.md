@@ -18,3 +18,4 @@ Then, use `python download.py` to download videos, which will be saved in tmp di
 
     # this command will download the video links just crawled
     python download.py lecture video
+
