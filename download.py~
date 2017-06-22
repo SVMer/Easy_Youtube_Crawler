@@ -17,18 +17,20 @@ def main(query):
     dl_queue = [i for i in links if i not in dl_links]
     for l in dl_queue:
         print('downloading', l)
-        yt = YouTube("http://www.youtube.com/watch?v=Ik-RsDGPI5Y")
-        # print(yt.filter('flv'))
-        # print(yt.filter('mp4')[-1])
-        # print(yt.filter(resolution='480p'))
-        # video = yt.get('3gp', '144p')
-        # print(yt.filename)
-        video = yt.get_videos()[0]
-        video.download(query + '/')
+        try:
+            yt = YouTube(l)
+            # print(yt.filter('flv'))
+            # print(yt.filter('mp4')[-1])
+            # print(yt.filter(resolution='480p'))
+            # video = yt.get('3gp', '144p')
+            # print(yt.filename)
+            video = yt.get_videos()[-1]
+            video.download(query + '/')
 
-        file_dl_links.write(l)
-        file_dl_links.flush()
-
+            file_dl_links.write(l + '\n')
+            file_dl_links.flush()
+        except Exception as e:
+            print(e)
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
