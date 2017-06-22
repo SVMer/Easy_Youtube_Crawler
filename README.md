@@ -15,7 +15,7 @@ First, use `python crawl.py` to crawl video links, which will be saved in video_
 <pre><code># this command will use 'SVM' as a search query , and crawl all video links from the search page
 python crawl.py SVM
     
-# this command will use 'lecture video' as a search query
+# or you can use this command to search 'lecture video'
 python crawl.py lecture video
 </code></pre>
 <br>
