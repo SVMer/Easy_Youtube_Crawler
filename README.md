@@ -12,12 +12,18 @@ This is an easy to use youtube downloader, with somewhat anti-anti-spider techni
 ## Usage
 First, use `python crawl.py` to crawl video links, which will be saved in video_links.txt. For example:
 
-    # this command will use 'lecture video' as a search query , and crawl all video links from the search page
+    # this command will use 'SVM' as a search query , and crawl all video links from the search page
+    python crawl.py SVM
+    
+    # this command will use 'lecture video' as a search query
     python crawl.py lecture video
 <br>
 
 Then, use `python download.py` to download videos, which will be saved in tmp directory. For example:
 
-    # this command will download the video links just crawled
+    # this command will download 'SVM' video according to the links just crawled
+    python download.py SVM
+    
+    # or download 'lecture video' video by this command 
     python download.py lecture video
 <br>
