@@ -1,5 +1,5 @@
 # Easy_youtube_dl
-This is a Simple and Easy to Use youtube video crawler, with somewhat anti-anti-spider technique
+This is a Simple and Easy-to-Use youtube video crawler, with somewhat anti-anti-spider technique
 <br>
 <br>
 
